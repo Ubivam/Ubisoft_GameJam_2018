@@ -8,8 +8,10 @@ public class NoteIndicator : MonoBehaviour
     void Update()
     {
         transform.localScale = Vector3.one * (0.1f + MidiMaster.GetKey(noteNumber));
-
-        var color = MidiMaster.GetKeyDown(noteNumber) ? Color.red : Color.white;
+        bool pressed = MidiMaster.GetKeyDown(noteNumber);
+        var color = pressed ? Color.red : Color.white;
+        if(pressed)
+        print(noteNumber);
         GetComponent<Renderer>().material.color = color;
     }
 }
