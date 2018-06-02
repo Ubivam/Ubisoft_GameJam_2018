@@ -64,11 +64,19 @@
     <Compile Include="Assets\MiDi\Example Delegate\DelegateTester.cs" />
     <Compile Include="Assets\MiDi\Example Note\NoteIndicator.cs" />
     <Compile Include="Assets\MiDi\Example Note\NoteIndicatorGroup.cs" />
-    <Compile Include="Assets\MiDi\MidiJack\Midi.cs" />
-    <Compile Include="Assets\MiDi\MidiJack\MidiDriver.cs" />
-    <Compile Include="Assets\MiDi\MidiJack\MidiMaster.cs" />
-    <Compile Include="Assets\MiDi\MidiJack\MidiStateUpdater.cs" />
+    <Compile Include="Assets\MidiJack\Midi.cs" />
+    <Compile Include="Assets\MidiJack\MidiDriver.cs" />
+    <Compile Include="Assets\MidiJack\MidiMaster.cs" />
+    <Compile Include="Assets\MidiJack\MidiStateUpdater.cs" />
+    <Compile Include="Assets\Move.cs" />
+    <Compile Include="Assets\Rope\Rope.cs" />
+    <Compile Include="Assets\Rope\RopeCutter.cs" />
+    <Compile Include="Assets\Rope\Weight.cs" />
+    <Compile Include="Assets\sa\BarHandler.cs" />
+    <Compile Include="Assets\sa\UpdateMeshCollider.cs" />
+    <Compile Include="Assets\Scripts\CollisionDetection.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
+    <None Include="Assets\sa\Distort.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/GitKraken/game-jam/GameJamming/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
