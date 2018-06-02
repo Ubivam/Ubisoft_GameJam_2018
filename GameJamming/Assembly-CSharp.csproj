@@ -59,17 +59,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Example CC\KnobIndicator.cs" />
-    <Compile Include="Assets\Example CC\KnobIndicatorGroup.cs" />
-    <Compile Include="Assets\Example Delegate\DelegateTester.cs" />
-    <Compile Include="Assets\Example Note\NoteIndicator.cs" />
-    <Compile Include="Assets\Example Note\NoteIndicatorGroup.cs" />
-    <Compile Include="Assets\MidiJack\Midi.cs" />
-    <Compile Include="Assets\MidiJack\MidiDriver.cs" />
-    <Compile Include="Assets\MidiJack\MidiMaster.cs" />
-    <Compile Include="Assets\MidiJack\MidiStateUpdater.cs" />
+    <Compile Include="Assets\MiDi\Example CC\KnobIndicator.cs" />
+    <Compile Include="Assets\MiDi\Example CC\KnobIndicatorGroup.cs" />
+    <Compile Include="Assets\MiDi\Example Delegate\DelegateTester.cs" />
+    <Compile Include="Assets\MiDi\Example Note\NoteIndicator.cs" />
+    <Compile Include="Assets\MiDi\Example Note\NoteIndicatorGroup.cs" />
+    <Compile Include="Assets\MiDi\MidiJack\Midi.cs" />
+    <Compile Include="Assets\MiDi\MidiJack\MidiDriver.cs" />
+    <Compile Include="Assets\MiDi\MidiJack\MidiMaster.cs" />
+    <Compile Include="Assets\MiDi\MidiJack\MidiStateUpdater.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
-    <Compile Include="Assets\Scripts\KeyboardInstantiate.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/GitKraken/game-jam/GameJamming/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
