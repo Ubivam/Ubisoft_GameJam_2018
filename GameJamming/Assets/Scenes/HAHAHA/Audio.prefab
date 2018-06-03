@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1805478935650194}
+  m_IsPrefabParent: 1
+--- !u!1 &1805478935650194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4735964717055334}
+  - component: {fileID: 114818236817052620}
+  - component: {fileID: 114840381528055132}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4735964717055334
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805478935650194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 465.00546, y: 281.3808, z: -1.0067647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114818236817052620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805478935650194}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a888b538a7ae2dc4f9e5151c779a7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
+  treshold: 0
+--- !u!114 &114840381528055132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805478935650194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a888b538a7ae2dc4f9e5151c779a7191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: kjkszpj
+    clip: {fileID: 8300000, guid: 6319f82ca31ba524d8cd328673189df1, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part1
+    clip: {fileID: 8300000, guid: 6319f82ca31ba524d8cd328673189df1, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part2
+    clip: {fileID: 8300000, guid: 4734c7f0eae51bd469e25d893a11e45a, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part3
+    clip: {fileID: 8300000, guid: 5917e6b659fec7d47af3f2e7957b9e4d, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part4
+    clip: {fileID: 8300000, guid: 25c2834e3a8375647bd69508fe859948, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part5
+    clip: {fileID: 8300000, guid: 8a937452efddfc74195c23d800e36fdc, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part6
+    clip: {fileID: 8300000, guid: de273ef7569758a41bbac2752099c396, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part7
+    clip: {fileID: 8300000, guid: bdb621b25ccbd1f4ab6b5a02f4512a95, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part8
+    clip: {fileID: 8300000, guid: 2577d834fb4ca7c4794e77c17e004ebb, type: 3}
+    volume: 0.7
+    pitch: 1
+  - name: part9
+    clip: {fileID: 8300000, guid: 7079a81f38dab1041ae3ca126b8648e2, type: 3}
+    volume: 0.7
+    pitch: 1
+  treshold: 5
