@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Weight : MonoBehaviour {
 
-	public float distanceFromChainEnd = 0.3f;
+	public float distanceFromChainEnd = 0.6f;
 
 	public void ConnectRopeEnd (Rigidbody2D endRB)
 	{

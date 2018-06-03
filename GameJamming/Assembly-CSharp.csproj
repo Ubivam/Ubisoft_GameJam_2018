@@ -68,7 +68,7 @@
     <Compile Include="Assets\MidiJack\MidiDriver.cs" />
     <Compile Include="Assets\MidiJack\MidiMaster.cs" />
     <Compile Include="Assets\MidiJack\MidiStateUpdater.cs" />
-    <Compile Include="Assets\Move.cs" />
+    <Compile Include="Assets\Rope\Move.cs" />
     <Compile Include="Assets\Rope\Rope.cs" />
     <Compile Include="Assets\Rope\RopeCutter.cs" />
     <Compile Include="Assets\Rope\Weight.cs" />

@@ -8,7 +8,13 @@ public class Rope : MonoBehaviour {
 
 	public Weight weigth;
 
-	public int links = 7;
+    [SerializeField]
+    private GameObject second;
+
+    [SerializeField]
+    private GameObject third;
+
+    public int links = 7;
 
 	void Start () {
 		GenerateRope();
@@ -19,7 +25,16 @@ public class Rope : MonoBehaviour {
 		Rigidbody2D previousRB = hook;
 		for (int i = 0; i < links; i++)
 		{
-			GameObject link = Instantiate(linkPrefab, transform);
+            GameObject link = Instantiate(linkPrefab, transform); ;
+          /* if (i == 0)
+            {
+                link = Instantiate(second, transform);
+            }
+            else
+            {
+                link = Instantiate(third, transform);
+            }
+            */
 			HingeJoint2D joint = link.GetComponent<HingeJoint2D>();
 			joint.connectedBody = previousRB;
 
