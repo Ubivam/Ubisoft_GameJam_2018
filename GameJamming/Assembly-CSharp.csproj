@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CollideWithPlayer.cs" />
     <Compile Include="Assets\MiDi\Example CC\KnobIndicator.cs" />
     <Compile Include="Assets\MiDi\Example CC\KnobIndicatorGroup.cs" />
     <Compile Include="Assets\MiDi\Example Delegate\DelegateTester.cs" />

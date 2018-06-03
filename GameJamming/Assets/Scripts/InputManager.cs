@@ -9,6 +9,8 @@ public class InputManager : MonoBehaviour {
 
     public int index;
 
+    private const int OFFEST = 36;
+
     private void Awake()
     {
         if (Instance != null)
@@ -19,10 +21,10 @@ public class InputManager : MonoBehaviour {
     }
 
     void Update() {
-        for (int i = 24; i <= 72; i++)
+        for (int i = OFFEST; i <= OFFEST+49; i++)
         {
-            keyboard_input[i-24] = MidiJack.MidiMaster.GetKeyDown(i);
-            if (keyboard_input[i-24])
+            keyboard_input[i-OFFEST] = MidiJack.MidiMaster.GetKeyDown(i);
+            if (keyboard_input[i- OFFEST])
             {
                 BarHandler.asd = true;
                 Debug.Log(i);
