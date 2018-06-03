@@ -1,30 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class InputManager : MonoBehaviour {
 
     public static InputManager Instance;
 
-    private void Awake()
-    {
-        if (Instance != null)
-            Destroy(this.gameObject);
-        else
-            Instance = this;
-
-    }
-
 
     bool[] keyboard_input;
 
+    public int index;
 
-    // Update is called once per frame
+    private void Awake()
+    {
+        if (Instance != null)
+            Destroy(gameObject);
+        else
+            Instance = this;
+        keyboard_input = new bool[50];
+    }
+
     void Update() {
-        for (int i = 38; i <= 84; i++)
+        for (int i = 24; i <= 72; i++)
         {
-            keyboard_input[i - 38] = MidiJack.MidiMaster.GetKeyDown(i);
-        } 
+            keyboard_input[i-24] = MidiJack.MidiMaster.GetKeyDown(i);
+            if (keyboard_input[i-24])
+            {
+                BarHandler.asd = true;
+                Debug.Log(i);
+            }
+        }
 	}
 
     public bool[] GetInputsAndClear()
