@@ -9,7 +9,7 @@ public class InputManager : MonoBehaviour {
 
     public int index;
 
-    private const int OFFEST = 36;
+    public static int OFFEST = 36;
 
     private void Awake()
     {
@@ -36,8 +36,15 @@ public class InputManager : MonoBehaviour {
     {
         bool[] ret = keyboard_input.Clone() as bool[];
 
-        for (int i = 0; i < keyboard_input.Length; i++)
-            keyboard_input[i] = false;
+        //for (int i = 0; i < keyboard_input.Length; i++)
+        //    keyboard_input[i] = false;
+
+        return ret;
+    }
+
+    public bool[] GetInputs()
+    {
+        bool[] ret = keyboard_input.Clone() as bool[];
 
         return ret;
     }
