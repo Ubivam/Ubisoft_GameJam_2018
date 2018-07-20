@@ -1,13 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
 
-    public void LoadLevel(string name)
+    public void LoadLevel()
     {
-        Debug.Log("New Level load: " + name);
-        Application.LoadLevel(name);
+        int scena = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(scena);
+    }
+    public void ReturnToLevel()
+    {
+        int scena = SceneManager.GetActiveScene().buildIndex -1;
+        SceneManager.LoadScene(scena);
     }
 
     public void QuitRequest()
